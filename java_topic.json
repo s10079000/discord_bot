@@ -1,0 +1,20 @@
+{
+    "first" : [
+        "Q:請說明Final、Finally、Finalize三者不同? \n A: \n ●Final: \n 是一種修飾關鍵字，加在變數前該變數為常數，加在方法前則該方法不能被覆寫，加在類別前則該類別不能被繼承。 \n ●Finally: \n 是一個例外處理關鍵字，寫在catch最後面，保證一定會執行，主要功用是做資源釋放。 \n ●Finalize: \n 是一種Object類的方法，因此是所有類別都有的方法(所有類繼承Object)，當物件要被銷毀前，會執行的方法，此外可以透過System.gc呼叫資源回收",
+        "Q:請說明String字串中== 與.equals不同? \n A: \n ●==: \n 是比較儲存的值，基本型別是儲存在Stack中，因此值是相同的。字串是儲存在字串池(String Pool)中，在Stack當中存的是址的值，因此採用==比較時會對比就是址的值。 \n ●equals: \n 是String覆寫後的equals方法，比較的是內容值。 \n Java的字串有字串池機制，當宣告一個新的字串時，Java會先去字串池中尋找是否有相同的字串，如果有則會使用原本舊有的字串，沒有時才會新增一個新的字串。 \n 如此一來，如果都是用String s1=”Hello World;”這種方式宣告新的字串，String s2=”Hello World”;的址的值會與s1一樣。值得注意的是，如果是用new來宣告，如:String s3=new String(”Hello World”);這種方式，則s3這個字串會存在Heap中，與s1、s2的址的值是不同的，這時候使用==就會是false。"
+    ],
+    "quest" : [
+        "請說明Final、Finally、Finalize三者不同?",
+        "請說明String字串中== 與.equals不同?",
+        "Arrays跟ArrayList的差異?",
+        "說明stack跟heap區別?",
+        "陣列有沒有length()這個方法? String有沒有length()這個方法?",
+        "throw與throws的區別?",
+        "Int以及Integer何者會占用更多記憶體?",
+        "a=a+b與a+=b的區別為何?",
+        "是否可以將int強制轉型為byte?",
+        "是否能保證gc的執行?",
+        "抽象類別與介面有什麼區別?",
+        "說明集合List與Set區別?"
+    ]
+}
